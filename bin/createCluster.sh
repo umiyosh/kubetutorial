@@ -1,3 +1,4 @@
 #!/usr/bin/env zsh
 clusterName=$1
-gcloud container clusters create $clusterName
+procjectName=$2
+gcloud container clusters create $clusterName --project=$procjectName
